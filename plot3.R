@@ -20,6 +20,6 @@ with(two_day_data,plot(Time,Sub_metering_1,type="n",
 with(two_day_data,lines(Time,Sub_metering_1,col="black"))
 with(two_day_data,lines(Time,Sub_metering_2,col="red"))
 with(two_day_data,lines(Time,Sub_metering_3,col="blue"))
-legend("topright",pch=46,col=c("black","red","blue"),
+legend("topright",pch=46,col=c("black","red","blue"), lty=c(1,1,1),
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 dev.off()

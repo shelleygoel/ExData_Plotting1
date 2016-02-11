@@ -11,7 +11,7 @@ power_data$Date <- as.Date(power_data$Date,"%d/%m/%Y")
 two_day_data <- subset(power_data,Date>="2007-02-01" 
                        & Date<="2007-02-02")
 
-two_day_data$Time = strptime(paste(two_day_data$Date,two_day_data$Time),"%Y-%m-%d %H-%M-%S")
+two_day_data$Time<-strptime(paste(two_day_data$Date,two_day_data$Time),"%Y-%m-%d %H:%M:%S")
 
 png("plot2.png",width=520,height=520,units="px")
 
